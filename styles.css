@@ -1,0 +1,57 @@
+a {
+    font-size: 3vw;
+  }
+  
+  /*@media only screen and (max-width: 600px) {
+    a {
+      font-size: 4vw;
+    }
+  }*/
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .nav-text {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+  }
+  
+  .nav-text a {
+    color: #EEEEEE; 
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+  }  
+          
+  .nav-text a:visited,
+  .nav-text a:active {
+    color: #EEEEEE;
+  }
+         
+  .nav-text a:hover {
+    color: #00ADB5; 
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  #welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightblue;
+    text-align: center;
+    padding-top: 60px;
+}
