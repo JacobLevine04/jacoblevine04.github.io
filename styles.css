@@ -135,31 +135,32 @@ html {
 
 .skill {
   display: flex;
-  flex-direction: column;  /* Stack text under the icon */
-  align-items: center;     /* Center horizontally */
-  text-align: center;      /* Center the text itself */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   position: relative;
 }
 
 .skill-text {
   position: relative;
-  display: none;           /* Hide the text by default */
+  display: none;
   font-size: 14px;
   padding-top: 5px;
-  margin-top: 10px;         /* Space between the icon and the text */
-}
-
-.skill-icon:hover + .skill-text {
-  display: block;          /* Show the text when the icon is hovered */
+  margin-top: 10px;
 }
 
 .skill-icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.2);  /* Only scales the hovered icon */
+}
+
+.skill-icon:hover + .skill-text {
+  display: block;  /* Shows the text when the icon is hovered */
 }
 
 .skill:hover .skill-text {
-  display: block;          /* Ensure the text is shown when the whole skill container is hovered */
+  display: block;
 }
+
 
 
 .projects-grid {
