@@ -122,17 +122,30 @@ html {
   margin-bottom: 20px;
 }
 
+.skill {
+  text-align: center;
+}
+
 .skill-icon {
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-  transition: transform 0.3s ease; 
+  width: 75px;
+  height: 75px;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.skill-text {
+  display: none;  /* Hide the text by default */
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 .skill-icon:hover {
-  transform: scale(1.2);  
+  transform: scale(1.2);
 }
 
+.skill-icon:hover + .skill-text {
+  display: block;  /* Show the text when the icon is hovered */
+}
 
 .projects-grid {
   display: flex;
