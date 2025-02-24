@@ -121,12 +121,12 @@ html {
   justify-content: center;
   gap: 40px;
   margin-bottom: 50px;
-  margin-top: 50px
+  margin-top: 200px
 }
 
 .skill-icon {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   padding: 15px;
   transition: transform 0.3s ease;
 }
