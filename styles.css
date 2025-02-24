@@ -182,8 +182,14 @@ html {
   transition: transform 0.3s ease-in-out;
 }
 
+
+.contact-big {
+  display: inline-block; 
+  transition: transform 0.3s ease-in-out;
+}
+
 .contact-big:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); 
   cursor: pointer;
 }
 
@@ -199,6 +205,8 @@ html {
   color: #00ADB5;
   font-size: 18px;
   text-decoration: none;
+  display: inline-block;  
+  transform-origin: center;
 }
 
 footer {
