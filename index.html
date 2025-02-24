@@ -30,7 +30,7 @@
           </div>
         </div>
         <span class="space"></span>
-        <div class="skills">
+        <div class="skills section">
             <img src="icons/html-5.svg" alt="HTML" class="skill-icon">
             <img src="icons/css-3.svg" alt="CSS" class="skill-icon">
             <img src="icons/javascript.svg" alt="JavaScript" class="skill-icon">
@@ -86,5 +86,27 @@
     <footer>
       <p>&copy; 2025 Jacob Levine. All rights reserved.</p>
     </footer>
+    <script>
+      // Create an intersection observer to detect when sections enter the viewport
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Add the 'visible' class when the section is in view
+            entry.target.classList.add('visible');
+          } else {
+            // Optionally remove the 'visible' class if you want it to reset when it's out of view
+            entry.target.classList.remove('visible');
+          }
+        });
+      }, {
+        threshold: 0.5  // The section needs to be 50% visible before triggering
+      });
+
+      // Target all sections (or specific ones) you want to apply the effect to
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    </script>
   </body>
 </html>
