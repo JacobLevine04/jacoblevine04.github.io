@@ -9,14 +9,20 @@ body {
 
 html {
   scroll-behavior: smooth; 
-  scroll-padding-top: 10px;
+  scroll-padding-top: 25px;
 }
 
-/*@media only screen and (max-width: 600px) {
-    a {
-      font-size: 4vw;
-    }
-  }*/
+@media only screen and (max-width: 600px) {
+  .projects-grid {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .project {
+    width: 100%;
+  }
+}
+
   
 * {
   margin: 0;
@@ -142,26 +148,31 @@ html {
 }
 
 .skill-text {
-  position: relative;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   display: none;
   font-size: 14px;
   padding-top: 5px;
   margin-top: 10px;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.skill:hover .skill-text {
+  display: block;
+  opacity: 1;  /* Smooth transition when the text appears */
 }
 
 .skill-icon:hover {
   transform: scale(1.2);  /* Only scales the hovered icon */
 }
 
-.skill-icon:hover + .skill-text {
-  display: block;  /* Shows the text when the icon is hovered */
-}
 
 .skill:hover .skill-text {
   display: block;
 }
-
-
 
 .projects-grid {
   display: flex;
