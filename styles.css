@@ -54,7 +54,7 @@ html {
   color: white;
   padding: 15px;
   text-align: center;
-  z-index: 2;
+  z-index: 3;
 }
 
 #welcome-section {
@@ -243,4 +243,5 @@ h2 {
 .underline-title {
   border-bottom: 7px solid #00ADB5;
   padding-bottom: 15px;
+  z-index: 2;
 }
