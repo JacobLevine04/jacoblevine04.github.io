@@ -106,7 +106,7 @@ html {
   justify-content: center;   /* Center content horizontally */
   align-items: center;       /* Align items vertically */
   gap: 20px;                 /* Add space between image and text */
-  text-align: left;          /* Align text to the left */
+  text-align: center;          
 }
 
 .about-content {
