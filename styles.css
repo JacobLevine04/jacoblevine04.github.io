@@ -166,22 +166,7 @@ html {
   transition: transform 0.3s ease-in-out;
 }
 
-.contact-1:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.contact-2:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.contact-3:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.contact-4:hover {
+.contact-big:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
