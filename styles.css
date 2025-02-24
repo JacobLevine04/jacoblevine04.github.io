@@ -142,6 +142,11 @@ html {
   padding: 50px;
 }
 
+#contact:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .contact-links {
   display: flex;
   justify-content: space-between;
