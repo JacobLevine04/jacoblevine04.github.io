@@ -136,7 +136,7 @@ html {
 .about-content {
   max-width: 800px;
   margin: auto;
-  padding-top: 10px;
+  padding-top: 25px;
 }
 
 .about-content p {
@@ -171,7 +171,7 @@ html {
   justify-content: center;
   gap: 30px;
   margin-bottom: 500px;
-  margin-top: 950px;
+  margin-top: 1000px;
   padding: 100px;
 }
 
@@ -283,7 +283,7 @@ footer {
 }
 
 .space {
-  margin: 125px 0; 
+  margin: 175px 0; 
 }
 
 h2 {
