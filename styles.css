@@ -148,7 +148,7 @@ html {
   justify-content: center;
   gap: 30px;
   margin-bottom: 500px;
-  margin-top: 1000px;
+  margin-top: 800px;
   margin-left: 50px;
   padding: 100px;
 }
@@ -261,7 +261,7 @@ footer {
 }
 
 .space {
-  padding: 25px;
+  margin: 100px 0; 
 }
 
 h2 {
