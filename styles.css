@@ -81,13 +81,20 @@ html {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  transform: scale(0.8);
   z-index: 1;
 }
 
-.profile-img.visible {
+/* General visible class for transition */
+.visible {
   opacity: 1;
-  transform: scale(1);
+  transform: scale(1);  /* Ensure it's scaled to normal size */
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Initial state for sections you want to animate */
+.section {
+  opacity: 0;  /* Start invisible */
+  transform: scale(0.8);  /* Start scaled down */
 }
 
 .skills {
@@ -100,7 +107,7 @@ html {
 .skill-icon {
   width: 50px;
   height: 50px;
-  padding: 10px;
+  padding: 50px;
 }
 
 .projects-grid {
