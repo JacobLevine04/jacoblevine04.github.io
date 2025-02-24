@@ -9,7 +9,6 @@ body {
 
 html {
   scroll-behavior: smooth; 
-  scroll-padding-top: 25px; 
 }
 
 /*@media only screen and (max-width: 600px) {
@@ -235,7 +234,7 @@ h2 {
 }
 
 .about-h2 {
-  position: absolute;
+  position: relative;
   padding-top: 30px;
   text-align: center; 
   margin-left: 50px;
@@ -243,14 +242,14 @@ h2 {
 }
 
 .work-h2 {
-  position: absolute;
+  position: relative;
   text-align: center;
   margin-left: 50px;
   margin-right: 50px;
 }
 
 .contact-h2 {
-  position: absolute;
+  position: relative;
   padding-top: 30px;
   margin-bottom: -20px;
   text-align: center; 
