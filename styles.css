@@ -42,12 +42,13 @@ html {
     justify-content: center;
     gap: 20px; /* Adjust spacing */
     margin: 50px auto; /* Adjust margins */
-    padding: 20px;
+    padding-top: 90%;
+    padding-bottom: 100px;
     position: relative; /* Ensure it stays in flow */
   }
 
   .skill {
-    flex: 1 1 100px; /* Make skills flexible and wrap */
+    flex: 1 1 45%; /* Make skills flexible and wrap */
     text-align: center;
   }
 
