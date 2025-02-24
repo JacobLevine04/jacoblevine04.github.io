@@ -9,7 +9,7 @@ body {
 
 html {
   scroll-behavior: smooth; 
-  scroll-padding-top: 60px; 
+  scroll-padding-top: 50px; 
 }
 
 /*@media only screen and (max-width: 600px) {
