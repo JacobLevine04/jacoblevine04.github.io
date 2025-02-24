@@ -140,6 +140,8 @@ html {
   position: absolute;
   font-size: 14px;
   margin-top: 5px;
+  text-align: center; 
+  width: 100%;
 }
 
 .skill-icon:hover {
