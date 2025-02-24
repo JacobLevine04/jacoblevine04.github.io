@@ -37,10 +37,25 @@ html {
   }
 
   .skills {
-    position: relative; /* Adjust positioning */
-    margin-top: 50px; /* Ensure spacing between sections */
-    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center;
+    gap: 20px; /* Adjust spacing */
+    margin: 50px auto; /* Adjust margins */
+    padding: 20px;
+    position: relative; /* Ensure it stays in flow */
   }
+
+  .skill {
+    flex: 1 1 100px; /* Make skills flexible and wrap */
+    text-align: center;
+  }
+
+  .skill-icon {
+    width: 70px; /* Adjust size for mobile */
+    height: 70px;
+  }
+  
 }
   
 * {
