@@ -54,7 +54,7 @@ html {
   color: white;
   padding: 15px;
   text-align: center;
-  z-index: 1;
+  z-index: 2;
 }
 
 #welcome-section {
@@ -78,12 +78,13 @@ html {
 }
 
 .profile-img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   opacity: 0;
   transform: scale(0.8);
   transition: opacity 0.6s ease, transform 0.6s ease;
+  z-index: 1;
 }
 
 .profile-img.visible {
@@ -101,6 +102,7 @@ html {
 .skill-icon {
   width: 50px;
   height: 50px;
+  padding: 10px;
 }
 
 .projects-grid {
