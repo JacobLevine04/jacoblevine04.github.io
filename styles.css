@@ -7,7 +7,6 @@ body {
   /*background-color: #ff99ff;*/
 }
 
-
 html {
   scroll-behavior: smooth; 
   scroll-padding-top: 40px;
@@ -27,7 +26,6 @@ html {
     width: 375px;
   }
 }
-
   
 * {
   margin: 0;
@@ -133,8 +131,9 @@ html {
   justify-content: center;
   gap: 30px;
   margin-bottom: 400px;
-  padding-top: 100px;
+  margin-top: 750px;
   margin-left: 50px;
+  padding: 50px;
 }
 
 .skill-icon {
@@ -173,7 +172,6 @@ html {
 .skill-icon:hover {
   transform: scale(1.2);  /* Only scales the hovered icon */
 }
-
 
 .skill:hover .skill-text {
   display: block;
