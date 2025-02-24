@@ -23,7 +23,24 @@ html {
   }
 
   #navbar {
-    width: 375px;
+    width: 100%; /* Full width on mobile */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .about-text {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center everything */
+    text-align: center; /* Center text */
+  }
+
+  .about-content p {
+    margin-left: 0; /* Remove left margin for mobile */
+  }
+
+  .skills {
+    position: relative; /* Adjust positioning */
+    margin-top: 50px; /* Ensure spacing between sections */
+    margin-bottom: 0;
   }
 }
   
