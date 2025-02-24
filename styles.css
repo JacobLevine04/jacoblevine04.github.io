@@ -66,18 +66,23 @@ html {
   box-sizing: border-box;
 }
 
+
 .nav-text {
   display: flex;
-  justify-content: right;
   gap: 20px;
+  justify-content: flex-end; 
+}
+
+.resume-link {
+  margin-right: auto; 
 }
 
 .nav-text a {
-  color: #EEEEEE; 
+  color: #EEEEEE;
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s ease-in-out;
-}  
+}
         
 .nav-text a:visited,
 .nav-text a:active {
@@ -97,12 +102,6 @@ html {
   padding: 15px;
   text-align: center;
   z-index: 3;
-}
-
-.resume-link {
-  margin-left: auto;
-  align-text: left;
-  justify-content: left;
 }
 
 #welcome-section {
