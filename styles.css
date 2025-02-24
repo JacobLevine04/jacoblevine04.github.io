@@ -65,48 +65,34 @@ html {
   box-sizing: border-box;
 }
 
+.navbar-content {
+  display: flex;
+  justify-content: space-between; /* Ensures items are aligned on the same line */
+  align-items: center; /* Vertically center the items */
+  width: 100%; /* Full width */
+}
+
 .nav-text {
   display: flex;
   gap: 20px;
-  justify-content: flex-end; 
 }
 
 .resume-link {
   display: flex;
   gap: 20px;
-  justify-content: flex-start; 
 }
 
+.nav-text a,
 .resume-link a {
   color: #EEEEEE;
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s ease-in-out;
 }
-        
-.resume-link a:visited,
-.resume-link a:active {
-  color: #EEEEEE;
-}
-        
-.resume-link a:hover {
-  color: #00ADB5; 
-}
 
-.nav-text a {
-  color: #EEEEEE;
-  text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s ease-in-out;
-}
-        
-.nav-text a:visited,
-.nav-text a:active {
-  color: #EEEEEE;
-}
-        
-.nav-text a:hover {
-  color: #00ADB5; 
+.nav-text a:hover,
+.resume-link a:hover {
+  color: #00ADB5;
 }
 
 #navbar {
