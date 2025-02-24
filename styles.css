@@ -139,9 +139,8 @@ html {
   display: none;  /* Hide the text by default */
   position: absolute;
   font-size: 14px;
-  margin-top: 5px;
-  text-align: center; 
-  width: 100%;
+  padding-top: 5px;
+  margin: 0 auto;
 }
 
 .skill-icon:hover {
@@ -184,7 +183,6 @@ html {
   padding: 50px;
   transition: transform 0.3s ease-in-out;
 }
-
 
 .contact-big {
   display: inline-block; 
