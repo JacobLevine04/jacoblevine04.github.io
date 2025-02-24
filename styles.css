@@ -147,10 +147,10 @@ html {
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-bottom: 400px;
-  margin-top: 750px;
+  margin-bottom: 500px;
+  margin-top: 1000px;
   margin-left: 50px;
-  padding: 50px;
+  padding: 100px;
 }
 
 .skill-icon {
