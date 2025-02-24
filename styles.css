@@ -87,6 +87,7 @@ html {
 .about-content {
   max-width: 800px;
   margin: auto;
+  padding-top: 50px;
 }
 
 .about-content p {
