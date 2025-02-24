@@ -123,11 +123,6 @@ html {
   margin-bottom: 20px;
 }
 
-.skill {
-  text-align: center;
-  position: relative;
-}
-
 .skill-icon {
   width: 75px;
   height: 75px;
@@ -135,20 +130,27 @@ html {
   transition: transform 0.3s ease;
 }
 
-.skill-text {
-  display: none;  /* Hide the text by default */
-  position: absolute;
-  font-size: 14px;
-  padding-top: 5px;
-  margin: 0 auto;
+.skill {
+  display: flex;
+  flex-direction: column;   /* Stack text under the icon */
+  align-items: center;      /* Center horizontally */
+  text-align: center;       /* Center the text itself */
+  position: relative;
 }
 
-.skill-icon:hover {
-  transform: scale(1.2);
+.skill-text {
+  display: none;  /* Hide the text by default */
+  font-size: 14px;
+  padding-top: 5px;
+  margin-top: 10px; /* Optional, you can add some space between the icon and the text */
 }
 
 .skill-icon:hover + .skill-text {
   display: block;  /* Show the text when the icon is hovered */
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
 }
 
 .projects-grid {
@@ -243,5 +245,7 @@ h2 {
 .underline-title {
   border-bottom: 7px solid #00ADB5;
   padding-bottom: 15px;
-  z-index: 2;
+  z-index: 2;  
+  position: relative;  
+  margin-top: 0; 
 }
