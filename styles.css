@@ -67,7 +67,6 @@ html {
   box-sizing: border-box;
 }
 
-
 .nav-text {
   display: flex;
   gap: 20px;
@@ -75,7 +74,25 @@ html {
 }
 
 .resume-link {
-  margin-right: auto; 
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start; 
+}
+
+.resume-link a {
+  color: #EEEEEE;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+        
+.resume-link a:visited,
+.resume-link a:active {
+  color: #EEEEEE;
+}
+        
+.resume-link a:hover {
+  color: #00ADB5; 
 }
 
 .nav-text a {
