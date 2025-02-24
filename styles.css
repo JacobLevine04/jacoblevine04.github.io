@@ -120,14 +120,14 @@ html {
   position: absolute;
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
   margin-bottom: 50px;
-  margin-top: 200px
+  margin-top: 500px
 }
 
 .skill-icon {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   padding: 15px;
   transition: transform 0.3s ease;
 }
