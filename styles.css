@@ -68,13 +68,30 @@ html {
 }
 
 #about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   padding: 50px;
+}
+
+.about-text {
+  display: flex;
+  justify-content: center;   /* Center content horizontally */
+  align-items: center;       /* Align items vertically */
+  gap: 20px;                 /* Add space between image and text */
+  text-align: left;          /* Align text to the left */
 }
 
 .about-content {
   max-width: 800px;
   margin: auto;
+}
+
+.about-content p {
+  max-width: 600px;          /* Ensure paragraph width doesn't get too wide */
+  margin-left: 20px;         /* Add margin between the image and the paragraph */
 }
 
 .profile-img {
@@ -107,8 +124,14 @@ html {
 .skill-icon {
   width: 50px;
   height: 50px;
-  padding: 50px;
+  padding: 10px;
+  transition: transform 0.3s ease; 
 }
+
+.skill-icon:hover {
+  transform: scale(1.2);  
+}
+
 
 .projects-grid {
   display: flex;
