@@ -102,6 +102,7 @@ html {
 .resume-link {
   margin-left: auto;
   align-text: left;
+  justify-content: left;
 }
 
 #welcome-section {
