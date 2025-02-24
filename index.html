@@ -6,6 +6,7 @@
     <title>Jacob Levine's Portfolio</title>
     <link href="styles.css" rel="stylesheet">
   </head>
+  
   <body>
     <nav id="navbar">
       <div class="nav-text">
@@ -17,11 +18,11 @@
         <a href="#contact-title">Contact</a>
       </div>
     </nav>
+    
     <main>
       <section id="welcome-section">
         <h1>Hello World! I'm Jacob Levine</h1>
       </section>
-
       <h2 id="about-title" class="about-h2 underline-title">About Me</h2>
       <section id="about">
         <div class="about-content">
@@ -32,7 +33,6 @@
             </p>
           </div>
         </div>
-      
         <div class="skills">
           <div class="skill">
             <img src="icons/html-5.svg" alt="HTML" class="skill-icon">
@@ -77,7 +77,6 @@
         <div class="work-category">
           <h2 id="work-title" class="underline-title work-h2">My Work</h2>
           <div class="projects-grid">
-            
             <div class="project">
               <script src="js/script.js"></script>
               <p>Project 1</p>
@@ -105,6 +104,7 @@
           </div>
         </div>
       </section>
+      
       <h2 id="contact-title" class="contact-h2 underline-title">Contact Me</h2>
       <section id="contact">
         <a class="contact-big" href="https://www.linkedin.com/in/jacob-levine04/" target="_blank">LinkedIn</a>
@@ -116,29 +116,5 @@
     <footer>
       <p>&copy; 2025 Jacob Levine. All rights reserved.</p>
     </footer>
-     <!--
-    <script>
-      // Create an intersection observer to detect when sections enter the viewport
-      const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            // Add the 'visible' class when the section is in view
-            entry.target.classList.add('visible');
-          } else {
-            // Optionally remove the 'visible' class if you want it to reset when it's out of view
-            entry.target.classList.remove('visible');
-          }
-        });
-      }, {
-        threshold: 0.5  // The section needs to be 50% visible before triggering
-      });
-
-      // Target all sections (or specific ones) you want to apply the effect to
-      const sections = document.querySelectorAll('.section');
-      sections.forEach(section => {
-        observer.observe(section);
-      });
-    </script>
-    -->
   </body>
 </html>
