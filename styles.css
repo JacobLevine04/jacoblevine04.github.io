@@ -101,18 +101,19 @@ html {
   z-index: 1;
 }
 
-/* General visible class for transition */
+/*
 .visible {
   opacity: 1;
-  transform: scale(1);  /* Ensure it's scaled to normal size */
+  transform: scale(1);  
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-/* Initial state for sections you want to animate */
+
 .section {
-  opacity: 0;  /* Start invisible */
-  transform: scale(0.8);  /* Start scaled down */
+  opacity: 0;  
+  transform: scale(0.8);   
 }
+*/
 
 .skills {
   display: flex;
@@ -217,4 +218,5 @@ h2 {
 
 .underline-title {
   border-bottom: 7px solid #00ADB5;
+  padding-bottom: 15px;
 }
