@@ -124,6 +124,7 @@ html {
 
 .skill {
   text-align: center;
+  position: relative;
 }
 
 .skill-icon {
@@ -135,6 +136,7 @@ html {
 
 .skill-text {
   display: none;  /* Hide the text by default */
+  position: absolute;
   font-size: 14px;
   margin-top: 5px;
 }
