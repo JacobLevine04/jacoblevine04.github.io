@@ -99,7 +99,7 @@ html {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 50px;
+  padding: 25px;
 }
 
 .about-text {
@@ -113,7 +113,7 @@ html {
 .about-content {
   max-width: 800px;
   margin: auto;
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .about-content p {
