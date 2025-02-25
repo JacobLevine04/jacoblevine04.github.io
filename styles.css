@@ -26,6 +26,7 @@ html {
     width: 90%; 
     text-align: center;
     padding: 25px;
+    margin-right: 10px; /*to adjust projects left and right on phone view */
   }
 
   #navbar {
