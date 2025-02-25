@@ -26,7 +26,7 @@ html {
     width: 90%; 
     text-align: center;
     padding: 25px;
-    margin-right: 10px; /*to adjust projects left and right on phone view */
+    margin-right: 5px; /*to adjust projects left and right on phone view */
   }
 
   #navbar {
@@ -55,7 +55,7 @@ html {
     gap: 20px;
     padding-top: 400px; 
     margin-top: 50px;
-    margin-right: 7px;
+    margin-right: 10px;
   }
 
   .skill {
