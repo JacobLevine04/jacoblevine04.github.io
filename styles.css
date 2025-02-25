@@ -12,7 +12,7 @@ html {
   scroll-padding-top: 50px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
 
   .projects-grid {
     display: flex;
@@ -161,6 +161,8 @@ html {
   height: 300px;
   border-radius: 50%;
   z-index: 1;
+  margin-top: -10px;
+  margin-bottom: 140px;
 }
 
 .skill-icon {
@@ -180,7 +182,7 @@ html {
 }
 
 .skill {
-  flex: 1 1 150px; 
+  flex: 1 1 120px; 
   max-width: 200px; 
   text-align: center;
   display: flex;
@@ -191,15 +193,11 @@ html {
 
 .skill-text {
   position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
   display: none;
   font-size: 14px;
   padding-top: 5px;
-  margin-top: 10px;
-  transition: opacity 0.3s ease;
-  opacity: 0;
+  margin-top: 56px;
+  
 }
 
 .skill:hover .skill-text {
@@ -209,10 +207,6 @@ html {
 
 .skill-icon:hover {
   transform: scale(1.2);  
-}
-
-.skill:hover .skill-text {
-  display: block;
 }
 
 .projects-grid {
