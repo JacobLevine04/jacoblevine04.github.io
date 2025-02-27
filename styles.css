@@ -178,6 +178,21 @@ html {
   transition: transform 0.3s ease;
 }
 
+#contact {
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between each contact item */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center; 
+  gap: 3px; /* Space between the icon and title */
+}
+
 .contact-icon {
   width: 20px;
   height: 20px;
@@ -185,7 +200,17 @@ html {
 }
 
 .contact-icon:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.contact-big {
+  font-size: 3vw;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-big:hover .contact-icon {
+  transform: scale(1.1);
   cursor: pointer;
 }
 
@@ -294,21 +319,6 @@ html {
   color: black;
 }
 
-#contact {
-  text-align: center;
-  padding: 50px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.contact-big {
-  display: inline-block; 
-  transition: transform 0.3s ease-in-out;
-}
-
-.contact-big:hover .contact-icon {
-  transform: scale(1.1); 
-  cursor: pointer;
-}
 
 .contact-links {
   display: flex;
