@@ -51,7 +51,7 @@ html {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding-top: 625px; 
+    padding-top: 615px; 
     margin-right: 10px;
   }
 
@@ -179,8 +179,8 @@ html {
   justify-content: center;
   gap: 20px;
   max-width: 90%;
-  margin-bottom: -125px;
-  margin-top: -175px;
+  margin-bottom: -115px;
+  margin-top: -165px;
 }
 
 .skill {
