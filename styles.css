@@ -12,6 +12,15 @@ html {
   scroll-padding-top: 50px;
 }
 
+h1 {
+  color: #49B618;
+  font-size: 3vw;
+            white-space: wrap;
+            overflow: hidden;
+            border-right: 5px solid #49B618;
+            padding-right: 5px;
+}
+
 @media only screen and (max-width: 480px) {
 
   .projects-grid {
@@ -71,6 +80,10 @@ html {
   .contact-icon {
     width: 16px;
     height: 16px;
+  }
+
+  h1 {
+    font-size: 6vw;
   }
 }
   
@@ -233,6 +246,7 @@ html {
   align-items: center;
 }
 
+
 .skill-text {
   position: absolute;
   display: none;
@@ -309,12 +323,14 @@ html {
   padding: 50px;
 }
 
+
 .project-title {
   font-size: 18px;
   font-weight: bold;
   margin-top: 10px;
   color: #EEEEEE;
 }
+
 
 .contact-links {
   display: flex;
@@ -373,13 +389,4 @@ h2 {
   z-index: 2;  
   position: relative;  
   margin-top: 0; 
-}
-
-h1 {
-  color: #49B618;
-  font-size: 6vw;
-            white-space: wrap;
-            overflow: hidden;
-            border-right: 5px solid #49B618;
-            padding-right: 5px;
 }
