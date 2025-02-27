@@ -128,7 +128,7 @@ h1 {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #333;
+  background: #202020;
   color: white;
   padding: 15px;
   text-align: center;
@@ -351,7 +351,7 @@ h1 {
 footer {
   text-align: center;
   padding: 20px;
-  background: #333;
+  background: #202020;
   color: #EEEEEE;
 }
 
