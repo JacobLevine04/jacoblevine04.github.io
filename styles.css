@@ -180,7 +180,7 @@ html {
   gap: 20px;
   max-width: 90%;
   margin-bottom: -115px;
-  margin-top: -185px;
+  margin-top: -200px;
 }
 
 .skill {
@@ -236,14 +236,14 @@ html {
 
 .project-image-container {
   width: 100%;
-  height: 200px; /* Adjust height as needed */
-  overflow: hidden; /* Prevents image stretching */
+  height: 200px; 
+  overflow: hidden; 
 }
 
 .project-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Fills space without warping */
+  object-fit: cover; 
   border-radius: 10px;
   display: block;
 }
