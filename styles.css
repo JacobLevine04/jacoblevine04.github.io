@@ -211,43 +211,41 @@ html {
   transform: scale(1.2);  
 }
 
-.projects-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 50px;
-}
-
 .project {
-  width: 275px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 275px;
   text-align: center;
   position: relative;
   border: 3px solid #00beef;
   border-radius: 15px;
   padding: 15px;
   background: white;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, height 0.3s ease-in-out;
   overflow: hidden;
 }
 
 .project:hover {
   transform: scale(1.1);
+  z-index: 2; 
+  height: auto; 
   cursor: pointer;
+}
+
+.project-image-container {
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  overflow: hidden; /* Prevents image stretching */
 }
 
 .project-image {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: cover; /* Fills space without warping */
   border-radius: 10px;
-}
-
-.project-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 10px;
-  color: black;
+  display: block;
 }
 
 .project-description {
@@ -261,7 +259,24 @@ html {
 
 .project:hover .project-description {
   opacity: 1;
-  max-height: 100px;
+  max-height: 500px; 
+}
+
+
+eepy 
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: black;
 }
 
 #contact {
