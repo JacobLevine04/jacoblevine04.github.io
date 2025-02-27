@@ -23,7 +23,7 @@
   
     <main>
       <section id="welcome-section">
-        <h1>Hello World! I'm Jacob Levine</h1>
+        <h1 id="welcome-text"></h1>
       </section>
       <h2 id="about-title" class="about-h2 underline-title">About Me</h2>
       <section id="about">
@@ -158,5 +158,38 @@
     <footer>
       <p>&copy; 2025 Jacob Levine. All rights reserved.</p>
     </footer>
+    <script>
+      const text = "Hello world! I'm Jacob Levine.";
+      const speed = 100;
+      const flickerTimes = 2;
+      let index = 0;
+      let flickerCount = 0;
+      let cursorVisible = true;
+      const h1 = document.getElementById("welcome-text");
+
+      function flickerCursor(initial = false, infinite = false) {
+          if (initial && flickerCount < flickerTimes * 2) {
+              h1.innerHTML = cursorVisible ? "&nbsp;" : " ";
+              cursorVisible = !cursorVisible;
+              flickerCount++;
+              setTimeout(() => flickerCursor(true), 500);
+          } else if (initial) {
+              typeText();
+          } else if (infinite) {
+              h1.innerHTML = text + (cursorVisible ? "&nbsp;" : " ");
+              cursorVisible = !cursorVisible;
+              setTimeout(() => flickerCursor(false, true), 500);
+          }
+      }
+
+      function typeText() {
+          if (index < text.length) {
+              h1.innerHTML = text.slice(0, index + 1) + "&nbsp;";
+              index++;
+              setTimeout(typeText, speed);
+          }
+      }
+      flickerCursor(true);
+  </script>
   </body>
 </html>
