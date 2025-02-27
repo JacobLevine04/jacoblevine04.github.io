@@ -14,7 +14,7 @@ html {
 
 h1 {
   color: #49B618;
-  font-size: 3vw;
+  font-size: 2vw;
             white-space: wrap;
             overflow: hidden;
             border-right: 5px solid #49B618;
@@ -83,7 +83,7 @@ h1 {
   }
 
   h1 {
-    font-size: 6vw;
+    font-size: 5vw;
   }
 }
   
