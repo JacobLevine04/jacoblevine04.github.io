@@ -368,6 +368,10 @@ h2 {
   margin-right: 100px;
 }
 
+.worklink {
+  font-size: 14px;
+}
+
 .underline-title {
   border-bottom: 7px solid #00beef;
   padding-bottom: 15px;
