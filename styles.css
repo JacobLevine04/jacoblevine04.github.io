@@ -263,12 +263,13 @@ html {
 }
 
 .projects-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   gap: 20px;
   padding: 50px;
+  justify-content: center;
 }
+
 
 .project-title {
   font-size: 18px;
