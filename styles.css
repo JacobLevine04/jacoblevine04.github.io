@@ -4,7 +4,7 @@ a {
 }
 
 body {
-  background-color: #f2f2f2;
+  background-color: #232323;
 }
 
 html {
@@ -72,13 +72,13 @@ html {
     width: 16px;
     height: 16px;
   }
-  
 }
   
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #EEEEEE;
 }
 
 .navbar-content {
@@ -108,7 +108,7 @@ html {
 
 .nav-text a:hover,
 .resume-link a:hover {
-  color: #00beef;
+  color: #49B618;
 }
 
 #navbar {
@@ -127,7 +127,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #40beef;
+  background: #000000;
   text-align: center;
   padding-top: 60px;
 }
@@ -176,6 +176,9 @@ html {
   height: 85px;
   padding: 15px;
   transition: transform 0.3s ease;
+}
+.worklink {
+  font-size: 14px;
 }
 
 #contact {
@@ -230,7 +233,6 @@ html {
   align-items: center;
 }
 
-
 .skill-text {
   position: absolute;
   display: none;
@@ -257,10 +259,10 @@ html {
   width: 275px;
   text-align: center;
   position: relative;
-  border: 3px solid #00beef;
+  border: 3px solid #49B618;
   border-radius: 15px;
   padding: 5px;
-  background: white;
+  background: #232323;
   transition: transform 0.3s ease-in-out, height 0.3s ease-in-out;
   overflow: hidden;
 }
@@ -269,7 +271,6 @@ html {
   transform: scale(1.1);
   z-index: 2; 
   height: auto; 
-  cursor: pointer;
 }
 
 .project-image-container {
@@ -287,7 +288,7 @@ html {
 
 .project-description {
   font-size: 14px;
-  color: black;
+  color: #EEEEEE;
   opacity: 0;
   max-height: 0;
   overflow: hidden;
@@ -308,14 +309,12 @@ html {
   padding: 50px;
 }
 
-
 .project-title {
   font-size: 18px;
   font-weight: bold;
   margin-top: 10px;
-  color: black;
+  color: #EEEEEE;
 }
-
 
 .contact-links {
   display: flex;
@@ -326,7 +325,7 @@ html {
 
 #contact a {
   margin: 10px;
-  color: #00beef;
+  color: #49B618;
   font-size: 18px;
   text-decoration: none;
   display: inline-block;  
@@ -337,7 +336,7 @@ footer {
   text-align: center;
   padding: 20px;
   background: #333;
-  color: white;
+  color: #EEEEEE;
 }
 
 .space {
@@ -368,14 +367,19 @@ h2 {
   margin-right: 100px;
 }
 
-.worklink {
-  font-size: 14px;
-}
-
 .underline-title {
-  border-bottom: 7px solid #00beef;
+  border-bottom: 7px solid #49B618;
   padding-bottom: 15px;
   z-index: 2;  
   position: relative;  
   margin-top: 0; 
+}
+
+h1 {
+  color: #49B618;
+  font-size: 6vw;
+            white-space: wrap;
+            overflow: hidden;
+            border-right: 2px solid #49B618;
+            padding-right: 5px;
 }
