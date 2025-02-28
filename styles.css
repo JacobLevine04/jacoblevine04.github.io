@@ -311,6 +311,8 @@ h1 {
   height: 200px; 
   overflow: hidden;
   margin-right: -150px;
+  display: flex;
+  justify-content: center;
 }
 
 .project-image {
