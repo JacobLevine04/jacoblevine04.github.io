@@ -336,10 +336,6 @@ h1 {
   position: relative; /* ensure proper positioning for the images */
 }
 
-.project:hover .project-image-container {
-  height: 350px; /* Increase height for smoother effect */
-}
-
 .project-images {
   position: relative;
   width: 100%;
