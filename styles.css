@@ -331,7 +331,7 @@ h1 {
 }
 
 .project-image-container {
-  width: 110%;
+  width: 200%;
   height: 300px;
   overflow: hidden;
   position: relative; /* ensure proper positioning for the images */
