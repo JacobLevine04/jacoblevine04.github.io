@@ -97,8 +97,8 @@ h1 {
     width: 16px;
     height: 16px;
   }
-
 }
+
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 5vw;
@@ -262,7 +262,6 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
-
 
 .skill-text {
   position: absolute;
