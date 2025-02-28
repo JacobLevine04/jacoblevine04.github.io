@@ -232,6 +232,23 @@
     }, 600); // cursor blink time
   }
   flickerCursor(true);
+
+  const projectImages = document.querySelectorAll('.project-images');
+
+  projectImages.forEach((project) => {
+    let currentImageIndex = 0;
+    const images = project.querySelectorAll('.project-image');
+    
+    project.addEventListener('mouseenter', () => {
+      setInterval(() => {
+        images.forEach((img, index) => {
+          img.style.opacity = (index === currentImageIndex) ? '1' : '0';
+        });
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+      }, 1500); // Change image every 1.5 seconds
+    });
+  });
+  
 </script>
 
   </body>
