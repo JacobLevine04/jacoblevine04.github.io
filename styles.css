@@ -115,6 +115,7 @@ h1 {
   padding: 0;
   box-sizing: border-box;
   color: #EEEEEE;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .navbar-content {
