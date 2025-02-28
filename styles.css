@@ -10,6 +10,7 @@ body {
 html {
   scroll-behavior: smooth; 
   scroll-padding-top: 50px;
+  overflow-y: scroll; 
 }
 
 h1 {
