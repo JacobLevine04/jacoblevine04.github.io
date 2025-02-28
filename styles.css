@@ -283,7 +283,6 @@ h1 {
   transform: scale(1.2);  
 }
 
-/* Styling for each project */
 .project {
   display: flex;
   flex-direction: column;
@@ -309,8 +308,9 @@ h1 {
 .project-images {
   position: relative;
   width: 100%;
-  height: 200px; /* Adjust height for the image slideshow */
+  height: 200px; 
   overflow: hidden;
+  margin-right: -150px;
 }
 
 .project-image {
@@ -322,29 +322,32 @@ h1 {
   transition: opacity 0.5s ease;
 }
 
-.project-images:hover .project-image:nth-child(1) {
+.project:hover .project-image:nth-child(1) {
   opacity: 1;
 }
 
-.project-images:hover .project-image:nth-child(2) {
+.project:hover .project-image:nth-child(2) {
   opacity: 0;
 }
 
-.project-images:hover .project-image:nth-child(3) {
+.project:hover .project-image:nth-child(3) {
   opacity: 0;
 }
 
-.project-images:hover .project-image:nth-child(4) {
+.project:hover .project-image:nth-child(4) {
   opacity: 0;
 }
 
-/* Description styling */
 .project-description {
   font-size: 14px;
   color: #EEEEEE;
-  opacity: 1; /* Always visible */
-  margin-top: 15px; /* Adds space between images and description */
+  opacity: 0;
+  margin-top: 10px; /* space between images and description */
   transition: opacity 0.3s ease-in-out;
+}
+
+.project:hover .project-description {
+  opacity: 1;
 }
 
 .project-title {
@@ -354,13 +357,11 @@ h1 {
   color: #EEEEEE;
 }
 
-
 .project-image-container {
   width: 100%;
   height: 200px; 
   overflow: hidden; 
 }
-
 
 .project:hover .project-description {
   opacity: 1;
