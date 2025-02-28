@@ -14,8 +14,6 @@ html {
 
 h1 {
   color: #49B618;
-  margin-top: -100px;
-  margin-bottom: 100px;
   font-family: "Courier New", Courier, monospace;
   font-size: 42px;
             white-space: wrap;
@@ -103,6 +101,8 @@ h1 {
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 5vw;
+    margin-top: -75px;
+    margin-bottom: 75px;
   }
   #welcome-text2 {
     padding-right: 0px;
