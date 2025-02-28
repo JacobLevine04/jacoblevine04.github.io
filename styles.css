@@ -288,7 +288,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 275px;
+  width: 370px;
   text-align: center;
   position: relative;
   border: 3px solid #49B618;
@@ -330,7 +330,7 @@ h1 {
 }
 
 .project-image-container {
-  width: 200%;
+  width: 100%;
   height: 300px;
   overflow: hidden;
   position: relative; /* ensure proper positioning for the images */
@@ -338,7 +338,6 @@ h1 {
 
 .project:hover .project-image-container {
   height: 350px; /* Increase height for smoother effect */
-  transform: scale(1.05); /* Slightly scale the image container for a smoother look */
 }
 
 .project-images {
