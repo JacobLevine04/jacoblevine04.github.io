@@ -228,6 +228,8 @@ h1 {
   z-index: 1;
   margin-top: -10px;
   margin-bottom: 140px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .skill-icon {
