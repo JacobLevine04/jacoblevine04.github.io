@@ -255,7 +255,7 @@
       project.addEventListener('mouseleave', () => {
         clearInterval(slideshowInterval);
         images.forEach(image => image.style.opacity = 0); // hide all images
-        //images[0].style.opacity = 1; // show the first image
+        images[0].style.opacity = 1; // show the first image
       });
 
       // Ensure the first image is visible on load
