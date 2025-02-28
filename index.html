@@ -237,19 +237,34 @@
   }
   flickerCursor(true);
 
-  const projectImages = document.querySelectorAll('.project-images');
-
-  projectImages.forEach((project) => {
-    let currentImageIndex = 0;
-    const images = project.querySelectorAll('.project-image');
+  document.addEventListener("DOMContentLoaded", function() {
+    const projects = document.querySelectorAll('.project');
     
-    project.addEventListener('mouseenter', () => {
-      setInterval(() => {
-        images.forEach((img, index) => {
-          img.style.opacity = (index === currentImageIndex) ? '1' : '0';
-        });
-        currentImageIndex = (currentImageIndex + 1) % images.length;
-      }, 1500); // Change image every 1.5 seconds
+    projects.forEach(project => {
+      const images = project.querySelectorAll('.project-image');
+      let currentIndex = 0;
+      let slideshowInterval;
+
+      // Start the slideshow when hovering
+      project.addEventListener('mouseenter', () => {
+        slideshowInterval = setInterval(() => {
+          images[currentIndex].style.opacity = 0; // hide current image
+          currentIndex = (currentIndex + 1) % images.length; // loop through images
+          images[currentIndex].style.opacity = 1; // show next image
+        }, 500); // change every 500ms
+      });
+
+      // Stop the slideshow and reset to the first image when mouse leaves
+      project.addEventListener('mouseleave', () => {
+        clearInterval(slideshowInterval);
+        images.forEach(image => image.style.opacity = 0); // hide all images
+        images[0].style.opacity = 1; // show the first image
+      });
+
+      // Ensure the first image is visible on load
+      images.forEach((image, index) => {
+        image.style.opacity = (index === 0) ? 1 : 0; // only show the first image initially
+      });
     });
   });
   
